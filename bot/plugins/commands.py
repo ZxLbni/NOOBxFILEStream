@@ -1,3 +1,4 @@
+#pylint:disable=E0602
 from telethon import Button
 from telethon.events import NewMessage
 from telethon.tl.custom.message import Message
@@ -11,11 +12,6 @@ from bot.modules.decorators import verify_user
 async def welcome(event: NewMessage.Event | Message):
     await event.reply(
         message=WelcomeText % {'first_name': event.sender.first_name},
-        buttons=[
-            [
-                Button.url('Add to Channel', f'https://t.me/{Telegram.BOT_USERNAME}?startchannel&admin=post_messages+edit_messages+delete_messages')
-            ]
-        ]
     )
 
 @TelegramBot.on(NewMessage(incoming=True, pattern=r'^/info$'))
