@@ -6,12 +6,12 @@ class Telegram:
     OWNER_ID = int(env.get("OWNER_ID", "6742022802"))
     ALLOWED_USER_IDS = env.get("ALLOWED_USER_IDS", "").split()
     BOT_USERNAME = env.get("TELEGRAM_BOT_USERNAME", "FILETOLINK5_ROBOT")
-    BOT_TOKEN = env.get("TELEGRAM_BOT_TOKEN", "7414077653:AAE20R8rdh29wb9IPo9G5cyCCzDk_nnIyzc")
+    BOT_TOKEN = env.get("TELEGRAM_BOT_TOKEN", "7414077653:AAFCSxFOX9n2qth-Ak-afHGYoNuGRkgsOEI")
     CHANNEL_ID = int(env.get("TELEGRAM_CHANNEL_ID", "-1001907672237"))
-    SECRET_CODE_LENGTH = int(env.get("SECRET_CODE_LENGTH", 4))
+    SECRET_CODE_LENGTH = int(env.get("SECRET_CODE_LENGTH", 12))
 
 class Server:
-    BASE_URL = env.get("BASE_URL", "https://noob-filestream.pp.ua")
+    BASE_URL = env.get("BASE_URL", "")
     BIND_ADDRESS = env.get("BIND_ADDRESS", "0.0.0.0")
     PORT = int(env.get("PORT", 8080))
 
