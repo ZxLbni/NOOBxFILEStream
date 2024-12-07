@@ -11,7 +11,13 @@ from bot.modules.decorators import verify_user
 @verify_user(private=True)
 async def welcome(event: NewMessage.Event | Message):
     await event.reply(
-        message=WelcomeText % {'first_name': event.sender.first_name},
+        message=WelcomeText % {"first_name": sender.first_name},
+        buttons=[
+            [
+                Button.url(text="🔔 Update Channel", url="https://t.me/noobprivate"),
+                Button.url(text="🧑‍💻 Developer", url="https://t.me/noob_je"),
+            ]
+        ],
     )
 
 @TelegramBot.on(NewMessage(incoming=True, pattern=r'^/info$'))
