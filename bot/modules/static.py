@@ -1,16 +1,18 @@
 WelcomeText = \
 """
-Hɪ! **%(first_name)s** Tʜɪs Is A Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇ Sᴛʀᴇᴀᴍɪɴɢ Bᴏᴛ (Dᴏᴄᴜᴍᴇɴᴛs, Vɪᴅᴇᴏ, Aᴜᴅɪᴏ, Pʜᴏᴛᴏ, Eᴛᴄ.) Tᴏ Dɪʀᴇᴄᴛ Hɪɢʜ Sᴘᴇᴇᴅ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ.
+Hi **%(first_name)s**, send me a file to instantly generate file links.
 
-Nᴏᴛᴇ: Dᴏɴ'ᴛ Fᴏʀᴡᴀʀᴅ Pᴏʀɴ Fɪʟᴇs Tᴏ Mᴇ, Yᴏᴜ Wɪʟʟ Gᴇᴛ Pᴇʀᴍᴀɴᴇɴᴛ Bᴀɴ.
+Join @noobprivate for updates.
 """
 
 UserInfoText = \
 """
 **First Name:**
 `{sender.first_name}`
+
 **Last Name:**
 `{sender.last_name}`
+
 **User ID:**
 `{sender.id}`
 
@@ -32,7 +34,7 @@ MediaLinksText = \
 **📥Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ:**
 `%(dl_link)s`
 
-**🃏Sᴛʀᴇᴀᴍ Lɪɴᴋ:**
+**▶️Sᴛʀᴇᴀᴍ Lɪɴᴋ:**
 `%(stream_link)s`
 
 **🔗Sʜᴀʀᴇ Lɪɴᴋ:**
